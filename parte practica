@@ -1,0 +1,90 @@
+#EJERCICIO_1
+print('¡Hola a \'" todos\'" y \'" todas!\'"')
+
+#EJERCICIO_2
+name = input('Ingresa el usuario: ')
+print("Hola <", name, ">")
+
+#Ejercicio 3
+print("A ", "\tB ", "\tQ" )
+print("------------------")
+print("0", "\t0", "\n0", "\t1", "\n1", "\t0", "\n1", "\t1")
+i = 0
+while i<4:
+    i = i+1
+    a = int(input("Ingrese a: "))
+    b = int(input("Ingrese b: "))
+    if (a == 0 and b == 0):
+        print('Q = 0')
+    elif (a == 0 and b == 1):
+        print('Q = 1')
+    elif (a == 1 and b == 0):
+        print('Q = 1')
+    elif (a == 1 and b == 1):
+        print('Q = 1')
+    else:
+        print('ERROR')
+        break}
+        
+#Ejercicio 4
+a = int(input('Ingrese el total de horas estudiadas: '))
+b = int(input('Ingrese el promedio usado por dia: '))
+c = a + b
+print('La suma total de horas es: ', c)
+
+#Ejercicio 5
+def sumar(n):
+    return (n * (n+1))/2
+m = int(input('Introduzca el numero M: '))
+suma = sumar(m)    
+print('El resultado es:', suma)
+
+#Ejercicio 6
+p = int(input('Ingrese su peso en lb: '))
+e = float(input('Ingrese su altura en metros:'))
+con = p/2.2046
+imc = float(con/(e**2))
+res = round(imc, 2)
+print('Tu indice de masa corporal es<', res, '>')
+
+#Ejercicio 7
+a = float(input('Ingrese un numero decimal:'))
+b = float(input('Ingrese un numero decimal:'))
+c =a/b
+d = a%b
+e = round (c, 2)
+f = round (d, 2)
+print('El resultado de la disivion es:<',e,'>')
+print('Eñ resultado del residuo es:<',f,'>')
+
+#Ejercicio 8
+a = float(input('Ingrese el monto a invertir:'))
+b = float(input('Ingrese el interes anual:'))
+c = float(input('Ingrese el total de años:'))
+d = float(b/100)
+i = a*d*c
+cf = a +i
+f = round(cf, 2)
+print(i)
+print('El capital obtenido es:<',f,'>')
+
+#Ejercicio 9
+barrenos = int(input('¿Cuantos barrenos vendio en el ultimo pedido?'))
+sierras = int( input('¿Cuantas sierras vendio en el ultimo pedido?'))
+b = 112
+s = 75
+tb = b*barrenos
+ts = s*sierras
+tp = tb+ts
+print('El peso total del paquete es:<',tp,'>')
+
+#Ejercicio 10
+ram = 20
+ramu = ram * 0.60
+a = int(input('Ingrese la cantidad de Rams que desea comprar:'))
+b = a *ram
+c = a *ramu
+d = b-c
+print('El precio normal de la venta es:"',b,'"')
+print('El descuento de la venta es:"',d,'"')
+print('El precio con descuento de la venta es:"',c,'"')
